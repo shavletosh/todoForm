@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	{% load static %}
+</head>
+<body>
+	<style>
+		header {
+		    
+		    justify-content: center;
+		    display: flex;
+		    letter-spacing: 1px;
+		    padding: 10px 0 30px 0;
+		    background: #706c6c;
+		    color: #fff;
+		    height: 50px;
+		}
+        .task-block {
+		    
+		    margin-left: 10px;
+		    max-width: 500px;
+		    max-height: 100px;
+		    padding: 10px 10px 12px 0;
+		    color: #000;
+		    background: #5181fc;
+		    font-size: 20px;
+		    justify-content: center;
+		    display: flex;
+		}
+		li {
+    		list-style: unset;
+		}
+        
+	</style>
+	<header>
+		{% block header %}
+    
+		{% endblock %}
+	</header>
+	<main>
+		{% block content %}
+    		
+		{% endblock %}
+	</main>
+
+</body>
+</html>

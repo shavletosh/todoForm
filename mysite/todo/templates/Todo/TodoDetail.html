@@ -1,0 +1,29 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+
+
+
+	<style>
+        	.done{
+        		background: green;
+        	}
+        	.cancer{
+        		background: red;
+        	}
+        	.doing{
+        		background: yellow;
+        	}
+    </style>
+
+
+	<div >
+		<h1>{{todo.task}}</h1>
+		<p>status - {{todo.status}}</p>
+		
+	</div>
+		<a class="btn btn-default" href="{% url 'TodoEdit' pk=todo.pk %}">edit</a>
+    
+
+{% endblock %}
+s
